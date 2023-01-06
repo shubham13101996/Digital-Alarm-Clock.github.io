@@ -1,0 +1,89 @@
+/* css variables */
+:root {
+    --main: #ff1e7d;
+    --white: #eef0f4;
+    --liner-gradiant-1: linear-gradient(145deg, #d0d1d5, #ffffff);
+    --shadow-1: 10.81px 10.81px 22px #d9dade, -10.81px -10.81px 22px #ffffff;
+    --shadow-2: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
+  }
+
+  body{
+    background-color: var(--white);
+    margin-top: 5%;
+    margin-left: 40%; 
+    font-family: 'Times New Roman', Times, serif;
+     margin-right: 40%;
+    align-items: center;
+
+  }
+
+  .alarm_clock_main_container{
+    align-content: center;
+    text-align: center;
+  }
+
+  .alarm_clock_display_time{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    background: var(--liner-gradiant-1);
+  box-shadow: var(--shadow-1);
+    width: 230px; 
+    height: 10%;
+    border-radius: 26px;
+    padding-left: 5px;
+    padding-right: 5px; 
+    margin-left: 4px;
+  }
+
+  #alarm_clock_time{
+    margin-top: 7px;
+    margin-right: 20px;
+    font-size: 3rem;
+    font-weight: bold;
+    color : var(--main);
+
+  }
+
+  .alarm_clock_heading{
+    color: var(--main);
+    margin-bottom: 20px;
+    padding-top: 50px;
+  }
+
+  .alarm_clock_field{
+    margin-top: -20px;
+    height: 40px;
+    padding-top: 0px;
+  }
+
+  input{
+    background: var(--liner-gradiant-1);
+    box-shadow: var(--shadow-1);
+    border-style: none;
+    border-radius: 5px;
+    text-align: center;
+    color: var(--main);
+    font-size: 17px;
+  }
+
+  input:hover{
+    border: 2px solid var(--main);
+    border-radius: 5px;
+  }
+
+  .alarm_clock_controls button{
+    background: var(--liner-gradiant-1);
+    box-shadow: var(--shadow-1);
+    border-style: none;
+    color: var(--main);
+    width: 105px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight:700;
+  }
+
+  .alarm_clock_controls button:hover{
+    cursor:pointer;
+  }

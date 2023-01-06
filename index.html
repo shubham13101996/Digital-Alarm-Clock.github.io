@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Digital_Alarm_Clock</title>
+</head>
+<body>
+    <section class="alarm_clock_main_container">
+        <div class="alarm_clock_display_time" >
+            <div id="alarm_clock_time"></div>
+        </div>
+        <form class="alarm-_clock_setAlarm">
+            <label class="alarm_clock_heading"><h3>Set Alarm(24-Hour Clock)</h3></label> <br>
+            <div class="alarm_clock_field">
+                <input type="number" name="a_hour" id="a_hour" placeholder="HH" max="23" min="00">
+                <input type="number" name="a_min" id="a_min" placeholder="MM" max="59" min="00">
+                <input type="number" name="a_sec" id="a_sec" placeholder="SS" max="59" min="00">
+            </div>
+            <div class="alarm_clock_controls">
+                <button type="submit" class="alarm_clock_setAlarmBtn">Set Alarm</button>
+                <button type="reset" class="alarm_clock_stopBtn">Stop Alarm</button>
+            </div>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
