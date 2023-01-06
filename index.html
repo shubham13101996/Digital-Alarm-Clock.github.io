@@ -10,6 +10,8 @@
 <body>
     <section class="alarm_clock_main_container">
         <div class="alarm_clock_display_time" >
+            <!-- <img src="clock.jpg"  alt="clock"> -->
+            <div class="blank"> </div>
             <div id="alarm_clock_time"></div>
         </div>
         <form class="alarm_clock_setAlarm">
@@ -21,7 +23,7 @@
             </div>
             <div class="alarm_clock_controls">
                 <button type="submit" class="alarm_clock_setBtn">Set Alarm</button>
-                <button type="reset" class="alarm_clock_stopBtn">Stop Alarm</button>
+                <button type="reset" class="alarm_clock_stopBtn" onclick="stopAlarm()">Stop Alarm</button>
             </div>
         </form>
     </section>

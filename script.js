@@ -8,6 +8,7 @@ const audio = new Audio("./Batman.mp3");
 audio.loop = true;
 
 
+const alarmTimeout = null;
 
 // store all the set alarms 
 const alarmArray = [];
@@ -31,6 +32,14 @@ function setTime(){
     }
 }
 
+// funtion to stop the ringing alarm 
+stopAlarm = ()=>{
+    audio.pause();
+    if(alarmTimeout){
+        clearTimeout(alarmTimeout);
+        alert("Alarm Stopped");
+    }
+}
 
 // set correct format of time 
 // means convert single digit to double digit by prepending 0

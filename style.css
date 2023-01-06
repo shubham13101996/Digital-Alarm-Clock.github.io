@@ -35,6 +35,10 @@
     padding-right: 5px; 
     margin-left: 4px;
   }
+  .blank{
+    width: 40px;
+    height: 40px;
+  }
 
   #alarm_clock_time{
     margin-top: 7px;
