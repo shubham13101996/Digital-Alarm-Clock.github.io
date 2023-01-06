@@ -51,6 +51,7 @@ function convertTime(value){
     }
     return value;
 }
+
 // removing alarm from UI 
 alarmList.addEventListener('click', e=> {
     console.log("removing element")
@@ -69,6 +70,7 @@ function showNewAlarm(newAlarm){
     alarmList.innerHTML += html
 };
 
+// eventlistener is set whenever form is submit with required set time 
 addAlarm.addEventListener('submit', e=> {
     e.preventDefault();
     let new_h=convertTime(addAlarm.a_hour.value);
