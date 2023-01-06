@@ -111,7 +111,18 @@
     flex-direction: row;
   }
 
-  .alarm_clock_list{
+  .alarm_clock_list span{
     width: 160px;
     margin-right: 18px;
+  }
+
+  .alarm_clock_list button{
+    color:var(--main);
+    background : var(--liner-gradiant-1);
+  box-shadow: var(--shadow-1);
+    border-radius: 3px;
+    border-width: 0px;
+    height: 22px;
+    cursor: pointer;
+    font-weight:700;
   }

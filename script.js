@@ -3,18 +3,32 @@ const display = document.getElementById("alarm_clock_time");
 const alarmList = document.querySelector('#alarmList');
 const addAlarm = document.querySelector('.alarm_clock_setAlarm');
 
+// setting audio for alarm
+const audio = new Audio("./Batman.mp3");
+audio.loop = true;
+
+
+
 // store all the set alarms 
 const alarmArray = [];
 
-// upadting time every second 
+// updating time every second 
 function setTime(){
 
     var time = new Date();
     const hour = convertTime(time.getHours());
     const minutes = convertTime(time.getMinutes());
     const seconds = convertTime(time.getSeconds());
-
+    
     display.innerText=`${hour}:${minutes}:${seconds}`;
+
+    const ringTime = `${hour}:${minutes}:${seconds}`;
+
+    // check if the alarmArray include the ringtime then play the audio 
+    if(alarmArray.includes(ringTime)){
+        audio.play();
+        alert(`Hey! it is ${now}`)
+    }
 }
 
 
@@ -28,19 +42,26 @@ function convertTime(value){
     }
     return value;
 }
+// removing alarm from UI 
+alarmList.addEventListener('click', e=> {
+    console.log("removing element")
+    if(e.target.classList.contains("alarm_clock_deleteBtn")){
+        e.target.parentElement.remove();
+    }    
+})
 
+// add new alarm to the ul list as a new alarm on UI 
 function showNewAlarm(newAlarm){
     const html =`
     <li class = "alarm_clock_list">        
         <span class="time">${newAlarm}</span>
-             
+        <button class="alarm_clock_deleteBtn" id="delete_button" onclick = "remove(this.value)" value=${newAlarm}>Delete Alarm</button>  
     </li>`
     alarmList.innerHTML += html
 };
 
 addAlarm.addEventListener('submit', e=> {
     e.preventDefault();
-    // const newAlarm = addAlarm.alarmTime.value;
     let new_h=convertTime(addAlarm.a_hour.value);
     if(new_h === '0'){
         new_h = '00'
@@ -71,5 +92,16 @@ addAlarm.addEventListener('submit', e=> {
         alert('Invalid');
     }
 })
+
+// remove alarm from the array using filter()method when delete button is clicked
+remove = (value)=>{
+let newList = alarmArray.filter((item)=>{
+    return item!=value;
+});
+alarmArray.length=0;
+alarmArray.push.apply(alarmArray,newList);
+console.log(newList);
+console.log(alarmArray);
+}
 
 setInterval(setTime, 1000);
