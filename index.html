@@ -12,7 +12,7 @@
         <div class="alarm_clock_display_time" >
             <div id="alarm_clock_time"></div>
         </div>
-        <form class="alarm-_clock_setAlarm">
+        <form class="alarm_clock_setAlarm">
             <label class="alarm_clock_heading"><h3>Set Alarm(24-Hour Clock)</h3></label> <br>
             <div class="alarm_clock_field">
                 <input type="number" name="a_hour" id="a_hour" placeholder="HH" max="23" min="00">
@@ -20,11 +20,22 @@
                 <input type="number" name="a_sec" id="a_sec" placeholder="SS" max="59" min="00">
             </div>
             <div class="alarm_clock_controls">
-                <button type="submit" class="alarm_clock_setAlarmBtn">Set Alarm</button>
+                <button type="submit" class="alarm_clock_setBtn">Set Alarm</button>
                 <button type="reset" class="alarm_clock_stopBtn">Stop Alarm</button>
             </div>
         </form>
     </section>
-    <script src="script.js"></script>
+  <hr style="margin: top 20px">
+    <section>
+      <div>
+       <h3 class="alarm_clock_heading" style="margin-top: -20" >Upcoming Alarms :</h3>
+      </div>
+      <div>
+        <ul id="alarmList"> 
+
+        </ul>
+      </div>
+    </section>
+     <script src="script.js"></script>
 </body>
 </html>

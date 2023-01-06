@@ -87,3 +87,31 @@
   .alarm_clock_controls button:hover{
     cursor:pointer;
   }
+
+  #alarmList{
+    list-style-type: none;
+  }
+
+  #alarmList li {
+    font-size: 1.2rem;
+    color:var(--main);
+    background : var(--liner-gradiant-1);
+  box-shadow: var(--shadow-1);
+    height: 2rem;
+    margin-left: -50px;
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-top: 10px;
+    width: 280px;
+    margin-bottom: 10px;
+  }
+
+  .alarm_clock_list{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .alarm_clock_list{
+    width: 160px;
+    margin-right: 18px;
+  }
