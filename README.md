@@ -6,7 +6,7 @@ In the second part we can set an alarm and all the new alarms being set will be 
 With every new alarm delete button will be given. On clicking that button you will be able to remove the alarm from the webpage / UI.
 
 # TechStack :
-HTML , CSS , JAVASCRIPT
+HTML, CSS, JAVASCRIPT
 
 # Features :
 1.Clock face:
