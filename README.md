@@ -26,3 +26,7 @@ For each alarm give a delete button to delete the alarm
 # Approach :
 All the alarms being set will be added to an array. The array will be checked every second if it contains the current time. If it does, then the alarm sound will be played. 
 On clicking on "Stop alarm" the audio will be paused and on clicking on "Delete Alarm" the set alarm will be removed from the array and the list. 
+
+# Important Links:
+1.Hosting Link: https://shubham13101996.github.io/Digital-Alarm-Clock.github.io/
+2.Video Link: https://youtu.be/eTqTQetmt-Q
